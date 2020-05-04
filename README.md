@@ -29,3 +29,4 @@ REPO: fork后的repo名，格式如 'duty-machine/archives'。
 ## 问题反馈及建议
 请到这个仓库发送issue： https://github.com/duty-machine/discuss 。
 trigger push
+trigger push2
