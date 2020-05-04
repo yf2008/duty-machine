@@ -9,10 +9,16 @@ register_website(
     author = ''
     content = document.css('.articlecontent').first
 
+    content.css('script').each(&:remove)
+	content.css('.wechatcodeDiv').each(&:remove)
+	content.css('.newlabelDiv').each(&:remove)
+	content.css('.article-oper').each(&:remove)
     {
       title: title,
       author: author,
       content: content.to_html.lines.map(&:strip).join
     }
+	
+	
   }
 )
