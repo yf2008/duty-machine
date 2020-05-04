@@ -5,7 +5,7 @@ register_website(
   },
   process: -> (html) {
     document = Nokogiri::HTML(html)
-    article = document.css('article').first || document.css('main').first
+    article = document.css('article').first || document.css('main').first || document.css('.column-article').first 
     title = document.css('title').first.content
 
     {
