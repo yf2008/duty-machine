@@ -21,5 +21,5 @@ jobs:
         bundle install --jobs 4 --retry 3
         bundle exec rake
       env:
-        TOKEN: ${{ github.token }}
-        REPO: ${{ github.repository }}
+        TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        REPO: ${{ secrets.REPO }}
