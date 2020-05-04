@@ -9,7 +9,6 @@ register_website(
     author = document.css('.author-info-box').first.content
     content = document.css('.article').first
 
-    content.css('script').each(&:remove)
     {
       title: title,
       author: author,
