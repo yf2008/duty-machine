@@ -8,7 +8,7 @@ register_website(
     title = document.css('.note-header').first.content
     author = document.css('.note-author').first.content
     content = document.css('.note-container').first
- 
+   content.css('script').each(&:remove)
     {
       title: title,
       author: author,
