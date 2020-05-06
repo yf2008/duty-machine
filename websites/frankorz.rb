@@ -7,7 +7,7 @@ register_website(
     document = Nokogiri::HTML(html)
     title = document.css('.post__title').first.content
     author = 'frankorz'
-    content = document.css('.post').first
+    content = document.css('.content').first
    
     {
       title: title,
