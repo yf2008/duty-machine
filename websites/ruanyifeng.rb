@@ -5,7 +5,7 @@ register_website(
   },
   process: -> (html) {
     document = Nokogiri::HTML(html)
-    title = document.css('.page-title').first.content
+    title = document.css('#page-title').first.content
     author = 'ruanyifeng'
     content = document.css('.hentry').first
     {
